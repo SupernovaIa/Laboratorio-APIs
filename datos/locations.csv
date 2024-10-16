@@ -13,7 +13,7 @@ ambite,"Ambite, Comunidad de Madrid, España",40.3289723,-3.1812115
 anchuelo,"Anchuelo, Comunidad de Madrid, 28818, España",40.4653862,-3.2689196
 aranjuez,"Aranjuez, Comunidad de Madrid, 28300, España",40.03221,-3.6039604
 arganda-del-rey,"Arganda del Rey, Comunidad de Madrid, 28500, España",40.3007708,-3.4380688
-arroyomolinos,"Arroyomolinos, Cáceres, Extremadura, España",39.1855991,-6.1630632
+arroyomolinos,"Arroyomolinos, Comunidad de Madrid, 28939, España",40.2729225,-3.9157978
 atazar-el,"El Atazar, Comunidad de Madrid, 28189, España",40.9343489,-3.4710919
 batres,"Batres, Comunidad de Madrid, España",40.2091393,-3.9215947
 becerril-de-la-sierra,"Becerril de la Sierra, Comunidad de Madrid, 28490, España",40.7163374,-3.9890681
@@ -36,7 +36,7 @@ canencia,"Canencia, Comunidad de Madrid, España",40.9095894,-3.7375609
 carabana,"Carabaña, Comunidad de Madrid, 28560, España",40.256626,-3.2347206
 casarrubuelos,"Casarrubuelos, Comunidad de Madrid, 28977, España",40.1707803,-3.8308526
 cenicientos,"Cenicientos, Comunidad de Madrid, 28650, España",40.2631894,-4.4669801
-cercedilla,"Cercedilla, Comunidad de Madrid, 28479, España",40.7412931,-4.0558002
+cercedilla,"Cercedilla, Comunidad de Madrid, España",40.7412931,-4.0558002
 cervera-de-buitrago,"Cervera de Buitrago, Comunidad de Madrid, España",40.9211319,-3.5293404
 chapineria,"Chapinería, Comunidad de Madrid, 28694, España",40.379164,-4.2097254
 chinchon,"Chinchón, Comunidad de Madrid, 28370, España",40.1408293,-3.4231474
@@ -52,7 +52,7 @@ corpa,"Corpa, Comunidad de Madrid, España",40.4235374,-3.2652482
 coslada,"Coslada, Comunidad de Madrid, España",40.423802,-3.5552882
 cubas-de-la-sagra,"Cubas de la Sagra, Comunidad de Madrid, 28978, España",40.1908352,-3.8378366
 daganzo-de-arriba,"Daganzo de Arriba, Comunidad de Madrid, 28814, España",40.5451953,-3.45785
-escorial-el,"Real Monasterio de San Lorenzo de El Escorial, Patio de Mascarones, San Lorenzo de El Escorial, Comunidad de Madrid, 28200, España",40.5890661,-4.147394873409854
+escorial-el,"Real Monasterio de San Lorenzo de El Escorial, Patio de los Evangelistas, San Lorenzo de El Escorial, Comunidad de Madrid, 28200, España",40.5890661,-4.147394873409854
 estremera,"Estremera, Comunidad de Madrid, 28595, España",40.1847306,-3.1062403
 fresnedillas-de-la-oliva,"Fresnedillas de la Oliva, Comunidad de Madrid, 28214, España",40.486444,-4.1723486
 fresno-de-torote,"Fresno de Torote, Comunidad de Madrid, España",40.5922684,-3.4119681
@@ -84,7 +84,7 @@ meco,"Meco, Comunidad de Madrid, 28880, España",40.553746,-3.3281561
 mejorada-del-campo,"Mejorada del Campo, Comunidad de Madrid, 28840, España",40.3971785,-3.4896068
 miraflores-de-la-sierra,"Miraflores de la Sierra, Comunidad de Madrid, España",40.8137532,-3.7667236
 molar-el,"El Molar, Comunidad de Madrid, 28710, España",40.7347865,-3.584376
-molinos-los,"Molinos Los, Qda Chiguasa, UPZs Localidad Rafael Uribe Uribe, Localidad Rafael Uribe Uribe, Bogotá, Bogotá Distrito Capital - Municipio, RAP (Especial) Central, 111831, Colombia",4.55,-74.1166667
+molinos-los,"Molinos Los, Qda Chiguasa, UPZ Marruecos, Localidad Rafael Uribe Uribe, Bogotá, Bogotá Distrito Capital - Municipio, RAP (Especial) Central, 111831, Colombia",4.55,-74.1166667
 montejo-de-la-sierra,"Montejo de la Sierra, Comunidad de Madrid, España",41.0593529,-3.530299
 moraleja-de-enmedio,"Moraleja de Enmedio, Comunidad de Madrid, 28950, España",40.2615532,-3.8612117
 moralzarzal,"Moralzarzal, Comunidad de Madrid, 28411, España",40.6791436,-3.9720985
@@ -130,7 +130,7 @@ san-lorenzo-de-el-escorial,"San Lorenzo de El Escorial, Comunidad de Madrid, Esp
 san-martin-de-la-vega,"San Martín de la Vega, Comunidad de Madrid, 28330, España",40.2110462,-3.5771806
 san-martin-de-valdeiglesias,"San Martín de Valdeiglesias, Comunidad de Madrid, 28680, España",40.3625,-4.3986503
 san-sebastian-de-los-reyes,"San Sebastián de los Reyes, Comunidad de Madrid, España",40.5473698,-3.6260586
-santa-maria-de-la-alameda,"Santa María de la Alameda, Comunidad de Madrid, España",40.5958248,-4.2579208
+santa-maria-de-la-alameda,"Santa María de la Alameda, Comunidad de Madrid, 28297, España",40.5958248,-4.2579208
 santorcaz,"Santorcaz, Comunidad de Madrid, España",40.4715789,-3.2335594
 santos-de-la-humosa-los,"Los Santos de la Humosa, Comunidad de Madrid, 28817, España",40.5012957,-3.2566803
 serna-del-monte-la,"La Serna del Monte, Comunidad de Madrid, 28737, España",41.0305793,-3.6252636
@@ -153,7 +153,7 @@ valdaracete,"Valdaracete, Comunidad de Madrid, 28594, España",40.2107697,-3.195
 valdeavero,"Valdeavero, Comunidad de Madrid, España",40.6309749,-3.3329368
 valdelaguna,"Valdelaguna, Comunidad de Madrid, 28391, España",40.1605777,-3.367827
 valdemanco,"Valdemanco, Comunidad de Madrid, España",40.8736636,-3.6636949
-valdemaqueda,"Valdemaqueda, Comunidad de Madrid, 28295, España",40.5110297,-4.2977731
+valdemaqueda,"Valdemaqueda, Comunidad de Madrid, España",40.5110297,-4.2977731
 valdemorillo,"Valdemorillo, Comunidad de Madrid, España",40.5016772,-4.0688878
 valdemoro,"Valdemoro, Comunidad de Madrid, España",40.1888604,-3.67143
 valdeolmos-alalpardo,"Valdeolmos-Alalpardo, Comunidad de Madrid, 28130, España",40.6385429,-3.4532436

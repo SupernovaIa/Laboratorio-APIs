@@ -122,30 +122,81 @@ def buscar_lugares_cercanos(coordenadas, categoria=None, query=None, distancia=1
 
 
 def sacar_valor(dc):
+    """
+    Extrae el valor de 'formatted_address' de un diccionario. Si ocurre un error, devuelve NaN.
 
+    Parameters:
+    - dc (dict): Diccionario del cual se extraerá el valor.
+
+    Returns:
+    - (str or NaN): El valor de 'formatted_address' si existe, o NaN en caso de error.
+    """
     try:
         return dc.get('formatted_address')
-    
     except:
         return np.nan
     
 
 def limpieza_df(df):
+    """
+    Limpia un DataFrame eliminando duplicados, extrayendo coordenadas y dirección, y eliminando columnas innecesarias.
 
+    Parameters:
+    - df (DataFrame): El DataFrame que contiene los datos a limpiar.
+
+    Returns:
+    - (DataFrame): El DataFrame limpio con las columnas renombradas y ajustadas.
+    """
     # Eliminamos duplicados. Como están ordenados por distancia nos quedamos con el primero
     df.drop_duplicates(['name'], keep='first', inplace=True)
 
     # Coordenadas
-    df['coordenadas'] = df['geocodes'].apply(lambda x: x['main'])
-    df['latitud'] = df['coordenadas'].apply(lambda x: x.get('latitude'))
-    df['longitud'] = df['coordenadas'].apply(lambda x: x.get('longitude'))
+    df['Coordenadas'] = df['geocodes'].apply(lambda x: x['main'])
+    df['Latitud'] = df['Coordenadas'].apply(lambda x: x.get('latitude'))
+    df['Longitud'] = df['Coordenadas'].apply(lambda x: x.get('longitude'))
 
     # Descomprimir
-    df['direccion'] = df['location'].apply(sacar_valor)
+    df['Direccion'] = df['location'].apply(sacar_valor)
 
     # Quitamos las columnas innecesarias
     df.drop(columns=['fsq_id', 'categories', 'chains', 'closed_bucket', 'link', 'related_places', 'timezone'], inplace=True)
     df.drop(columns='geocodes', inplace=True)
-    df.drop(columns=['location', 'coordenadas'], inplace=True)
+    df.drop(columns=['location', 'Coordenadas'], inplace=True)
+
+    # Renombrar columnas
+    df.rename(columns={'distance': 'Distancia', 'name': 'Nombre'}, inplace=True)
 
     return df
+
+
+def obtener_df_lugares(coordenadas, query=None, categoria=None, distancia=1000):
+    """
+    Obtiene una lista de lugares cercanos basados en coordenadas, consulta y/o categoría especificada.
+
+    Parámetros:
+    - coordenadas (list): Lista de tuplas o listas con coordenadas (latitud, longitud) de los lugares a buscar.
+    - query (str, opcional): Término de búsqueda opcional para filtrar los lugares por nombre o descripción.
+    - categoria (str, opcional): Categoría opcional para filtrar los lugares (e.g., 'restaurante', 'hotel').
+    - distancia (int, opcional): Radio de búsqueda en metros alrededor de cada coordenada. Por defecto es 1000.
+
+    Retorna:
+    - (DataFrame): Un DataFrame con la información de los lugares encontrados, procesada y limpia.
+    """
+
+    resultados = []
+
+    for i in tqdm(range(len(coordenadas))):
+
+        # Tiempo de espera aleatorio entre llamadas
+        time.sleep(random.uniform(0.5, 1.5))  # más eficiente que randint para tiempos aleatorios en este rango
+
+        # Hacemos la llamada a la API
+        res = buscar_lugares_cercanos(coordenadas[i], categoria=categoria, query=query, distancia=distancia)
+
+        # Si hay resultados, los procesamos
+        for lugar in res.get('results', []):
+            if lugar not in resultados:  # Añadimos si no está en la lista
+                resultados.append(lugar)
+
+    df = pd.DataFrame(resultados)
+    return limpieza_df(df)
